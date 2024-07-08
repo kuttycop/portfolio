@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Navbar</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous" 
+     referrerpolicy="no-referrer" />
+    <!-- Other head elements -->
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <h1>MyPortfolio...!</h1>
+        </div>
+        <ul class="navbar-right">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="navbar-menu-toggle" onclick="shownavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+    <div class="side-navbar" onclick="closenavbar()">
+        <p>
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+        <div class="side-navbar-links">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- /* home section */ -->
+    <section id="home" class="home-section">
+        <div class="home-content">
+            <h2 class="animated-text">Hi </h2>
+            <h2 class="animated-text">I am Hariharaputhran</h2>
+            <h2 id="frontend-web-designer" class="animated-text-right">Frontend Developer</h2>
+        </div>
+        <div class="profile-photo">
+            <img src="frontend2.png" alt="Profile Photo">
+        </div>
+    </section>
+
+    <!-- about section -->
+    <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <div class="about-content">
+                <p>
+                    I am Hariharaputhran, a passionate Frontend Web Designer with a keen eye for design and detail.
+                    With experience in creating dynamic and responsive websites, I strive to bring a unique perspective
+                    to every project I work on. My goal is to combine creativity and technical expertise to deliver
+                    visually appealing and user-friendly web experiences.
+                </p>
+                <button class="cvbtn"><a href="hariharapudhran.pdf.pdf">Download CV</a></button>
+            </div>
+            <div class="about-photo">
+                <img src="profile1.jpg" alt="Profile Photo">
+            </div>
+        </div>
+    </section>
+  
+
+    <!-- skills section -->
+<section class="skill-body" id="skills">
+    <div class="skill-container">
+        <h1 class="skill-heading">My Skills</h1>
+        <div class="skill-box">
+            <p><span>Html</span><span>97%</span></p>
+            <div class="progress-box">
+                <div class="progress html"></div>
+            </div>
+        </div>
+        <div class="skill-box">
+            <p><span>css</span><span>70%</span></p>
+            <div class="progress-box">
+                <div class="progress Css"></div>
+            </div>
+        </div>
+        <div class="skill-box">
+            <p><span>Javascript</span><span>56%</span></p>
+            <div class="progress-box">
+                <div class="progress js"></div>
+            </div>
+        </div>
+        <div class="skill-box">
+            <p><span>Python</span><span>85%</span></p>
+            <div class="progress-box">
+                <div class="progress python"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- project section -->
+<section id="projects" class="projects-section">
+    <h2>My Projects</h2>
+    <div class="projects-container">
+        <div class="project project1">
+            <div class="project-info">
+                <h3>BOOKSKY</h3>
+                <p>Developed a notes app for organizing and managing personal notes using HTML, CSS, and JavaScript.
+                    Designed a responsive and user-friendly interface with dynamic note-taking features.
+                    Implemented interactive functionalities for creating, editing, and deleting notes.
+                    Enhanced user productivity and organization through an intuitive and efficient design.
+                </p>
+            </div>
+        </div>
+        <div class="project project2">
+            <div class="project-info">
+                <h3>Calculator App</h3>
+                <p>Developed a calculator application using Python to perform basic arithmetic operations.
+                    Designed a user-friendly interface with Tkinter for an intuitive user experience.
+                    Implemented functionalities for addition, subtraction, multiplication, and division.
+                    Ensured accurate and efficient calculations, enhancing user productivity.
+                </p>
+            </div>
+        </div>
+        <div class="project project3">
+            <div class="project-info">
+                <h3>Guess the Number Game</h3>
+                <p>Developed an interactive web-based game where users guess a randomly generated number using HTML, CSS, and JavaScript.
+                    Designed a user-friendly interface with dynamic updates and feedback for each guess.
+                    Implemented core game logic in JavaScript, including input validation and hint messages.
+                    Enhanced user engagement with responsive design and interactive elements.</p>
+            </div>
+        </div>
+        <div class="project project4">
+            <div class="project-info">
+                <h3>Perfume Project</h3>
+                <p>Created an engaging web application to showcase and explore various perfumes using HTML, CSS, and JavaScript.
+                    Designed a visually appealing and responsive layout to enhance user experience.
+                    Implemented interactive features such as product filtering, detailed views, and user reviews.
+                    Improved user engagement and accessibility through intuitive design and functionality.</p>
+            </div>
+        </div>
+        <div class="project project5">
+            <div class="project-info">
+                <h3>Dodo List App</h3>
+                <p>Developed a to-do list application using HTML, CSS, and JavaScript for task management.
+                    Designed a clean and responsive interface for adding, editing, and deleting tasks.
+                    Implemented JavaScript functionalities to mark tasks as completed and store them in local storage.
+                    Enhanced user productivity through an intuitive and user-friendly design.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- about me -->
+<section id="contact" class="contact-section">
+    <h2>Contect Me</h2>
+    <p>Connect with me on social media:</p>
+    <form class="contact-form">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name">
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email">
+        </div>
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" placeholder="Your Message"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    <div class="social-icons">
+        <a href="https://www.instagram.com/yourusername" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/yourusername" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/yourusername" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://www.twitter.com/yourusername" target="_blank">
+            <i class="fab fa-twitter"></i>
+        </a>
+    </div>
+</section>
+
+
+      <script src="script.js"></script>
+</body>
+</html>
