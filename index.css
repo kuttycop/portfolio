@@ -664,6 +664,9 @@ button:hover {
         margin: o;
         width: 100%;
     }
+    .cvbtn{
+        margin-left: 30%;
+    }
 
     .projects-container .project {
         max-width: 100%;
@@ -704,4 +707,15 @@ button:hover {
     .social-icons a {
         font-size: 1.5rem;
     }
+}
+footer{
+    color: #fff;
+    padding: 20px ;
+}
+@media screen and (max-width:600px) {
+    footer{
+        color: #00e1ff;
+        width: 100%;
+    }
+    
 }
