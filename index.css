@@ -179,7 +179,6 @@ body {
 @media screen and (max-width:600px) {
     .profile-photo img{
         
-        display: block;
         width: 100%;
     }    
 }
@@ -209,7 +208,8 @@ body {
 }
 
 .about-content {
-    max-width: 60%;
+    max-width: 100%;
+    width: 60%;
     padding-left: 25px;
 }
 
@@ -218,6 +218,14 @@ body {
     line-height: 1.6;
     margin: 0;
     color: tomato;
+}
+@media screen and (max-width:600px) {
+    .about-content p{
+        width: 100%;
+        text-align: center;
+        
+    }
+    
 }
 
 .about-photo {
@@ -623,11 +631,14 @@ button:hover {
 
     .home-section {
         flex-direction: column;
+        
     }
 
     .home-content .animated-text,
     .home-content .animated-text-right {
         font-size: 1.2rem;
+        max-width: 100%;
+        padding-right: 100px;
         text-align: center;
     }
     .profile-photo{
@@ -643,11 +654,14 @@ button:hover {
 
     .about-container {
         width: 100%;
+        flex-wrap: wrap;
         flex-direction: column;
     }
 
     .about-content,
     .about-photo img {
+        padding: 0;
+        margin: o;
         width: 100%;
     }
 
@@ -671,15 +685,15 @@ button:hover {
         width: 100%;
     }
     .form-group input{
-        width: 100%;
+        width: 98%;
     }
 
     .form-group label {
         font-size: 0.9rem;
-        width: 100%;
+        width: 98%;
     }
     .form-group{
-        width: 100%;
+        width: 98%;
     }
 
     .form-group input,
