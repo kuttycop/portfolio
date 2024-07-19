@@ -70,6 +70,7 @@ body {
 .side-navbar p{
     text-align: end;
 }
+
 .side-navbar-links{
     padding-right: 30px;
     margin-bottom: 30px
@@ -97,6 +98,20 @@ body {
     } 
     .navbar-left h1{
         padding: 0%;
+    }
+    .fa-solid {
+        text-align: end;
+        margin-left: 200px;
+    }
+    .animated-text-right,
+    .profile-photo,
+    .about-section{
+        width: 100%;
+    }
+    .animated-text{
+        width: 100%;
+        padding: 0;
+        margin: 0;
     }
     
 }
@@ -181,9 +196,7 @@ body {
         
         width: 100%;
     }    
-    .profile-photo{
-        width: 100%;
-    }
+    
 }
 
 /* About section styles */
@@ -224,12 +237,25 @@ body {
         text-align: center;
         
     }
-    .cvbtn{
-        text-align: center;
-        margin-right: 44px;
-    }
+    
     .about-photo{
         text-align: center;
+        align-items: center;
+    }
+    .about-photo{
+        width: 100%;
+    }
+    .cvbtn{
+        margin-right: 44px;
+    }
+    .skill-body,
+    .skill-container,
+    .skill-heading,
+    .skill-box,
+    .progress-box{
+        width: 100%;
+        text-align: center;
+        justify-content: center;
         align-items: center;
     }
 }
