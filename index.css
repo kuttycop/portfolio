@@ -65,7 +65,7 @@ body {
     left: -60%;
     padding: 20px;
     color: black;
-    transition: 2s;
+    transition: 1s;
 }
 .side-navbar p{
     text-align: end;
@@ -108,8 +108,8 @@ body {
     justify-content: space-between;
     align-items: center;
     color: #fff;
-    padding: 20px;
     box-sizing: border-box;
+    margin-bottom: 10px;
 }
 
 .home-content {
@@ -123,7 +123,7 @@ body {
     font-size: 1.5rem;
 }
 .animated-text-right{
-    transition: 3s;
+    transition: 2s;
     color: #09d0f3;
 }
 .home-content
@@ -165,7 +165,7 @@ body {
     justify-content: center;
     margin-right: 100px;
     padding-top: 10%;
-    margin-bottom: 15%;
+    margin-bottom: 50px;
 }
 
 .profile-photo img {
@@ -181,41 +181,40 @@ body {
         
         width: 100%;
     }    
+    .profile-photo{
+        width: 100%;
+    }
 }
 
 /* About section styles */
 .about-section {
-    margin-bottom: 20px;
-    padding: 50px 20px;
-    color: #333;
-    text-align: left;
+    margin: 20px;
+    padding: 20px;
 }
 
 .about-section h2 {
     align-items: center;
     text-align: center;
     font-size: 2.5rem;
-    padding-bottom: 50px;
-    margin-bottom: 20px;
     color: #09d0f3;
 }
 
 .about-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
    
 }
 
 .about-content {
     max-width: 100%;
-    width: 60%;
-    padding-left: 25px;
+    margin-bottom: 20px;
+    padding: 20px;
 }
 
 .about-content p {
+    
     font-size: 1.2rem;
-    line-height: 1.6;
     margin: 0;
     color: tomato;
 }
@@ -225,15 +224,24 @@ body {
         text-align: center;
         
     }
-    
+    .cvbtn{
+        text-align: center;
+        margin-right: 44px;
+    }
+    .about-photo{
+        text-align: center;
+        align-items: center;
+    }
 }
 
 .about-photo {
+    width: 300px;
+    height: 400px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10px;
-    padding-right: 20px;
+
 }
 
 .about-photo img {
@@ -243,17 +251,13 @@ body {
     object-fit: cover;
 }
 .cvbtn{
-    padding: 10px;
+    padding: 20px;
     border-radius: 10px;
-    margin-top: 20px;
-    margin-left: 20px;
+    margin-top: 15px;
     background-color: #09d0f3;
     color: #000;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     border: 2px solid #000;
-    overflow: hidden;
-    text-decoration: none;
 }
 .cvbtn a{
     text-decoration: none;
@@ -262,7 +266,7 @@ body {
 .cvbtn:hover{
     background-color: aqua;
     cursor: pointer;
-    border: 2px solid tomato;
+    border: 2px solid #000;
 }
 
 /* skills section */
@@ -350,7 +354,7 @@ body {
         justify-content: center;
     }
     .project{
-        position: relative;
+        position: absolute;
 
     }
     
