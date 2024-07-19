@@ -99,9 +99,9 @@ body {
     .navbar-left h1{
         padding: 0%;
     }
-    .fa-solid {
-        text-align: end;
-        margin-left: 200px;
+    .fa-bars{
+        margin-left: 100%;
+        padding-left: 20px
     }
     .animated-text-right,
     .profile-photo,
@@ -248,14 +248,32 @@ body {
     .cvbtn{
         margin-right: 44px;
     }
-    .skill-body,
-    .skill-container,
-    .skill-heading,
-    .skill-box,
-    .progress-box{
+    .skill-body{
+        margin-left: 30px;
         width: 100%;
+        align-items: center;
         text-align: center;
+    }
+    .skill-container{
+        padding: 0;
         justify-content: center;
+        text-align: center;
+        margin: 0;
+        width: 100%;
+        align-items: center;
+    }
+    .skill-box{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .skill-heading{
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        width: 100%;
         align-items: center;
     }
 }
@@ -375,13 +393,18 @@ body {
 }
 @media screen and (max-width:600px) {
     .projects-container{
+        margin-left: 30px;
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
     }
     .project{
         position: absolute;
-
+    }
+    .projects-section h2{
+        margin-left: 50px;
     }
     
 }
@@ -602,16 +625,6 @@ button:hover {
     text-decoration: underline;
 }
 
-
-
-
-@media  only screen and (min-width:550px){
-    .skill-container{
-        width: 550px;
-    }
-    
-}
-
 /* Animation */
 @keyframes slide-in-left {
     0% {
@@ -668,17 +681,18 @@ button:hover {
     .home-content .animated-text-right {
         font-size: 1.2rem;
         max-width: 100%;
-        padding-right: 100px;
         text-align: center;
     }
     .profile-photo{
         width: 100%;
+        align-items: center;
+        text-align: center;
         margin: 0%;
     }
     .profile-photo img {
         width: 100%;
         margin: 0;
-        padding: 0;
+        padding-left: 20px;
         justify-content: center;
     }
 
@@ -694,10 +708,6 @@ button:hover {
         margin: o;
         width: 100%;
     }
-    .cvbtn{
-        margin-left: 30%;
-    }
-
     .projects-container .project {
         max-width: 100%;
     }
@@ -712,21 +722,22 @@ button:hover {
     }
     .contact-section{
         max-width: 600px;
+        margin-left: 30px;
     }
 
     .contact-form {
         width: 100%;
     }
     .form-group input{
-        width: 98%;
+        width: 100%;
     }
 
     .form-group label {
         font-size: 0.9rem;
-        width: 98%;
+        width: 100%;
     }
     .form-group{
-        width: 98%;
+        width: 100%;
     }
 
     .form-group input,
