@@ -3,112 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous" 
-     referrerpolicy="no-referrer" />
-    <!-- Other head elements -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="favicon1.webp">
 </head>
-
 <body>
-    <nav class="navbar">
-        <div class="navbar-left">
-            <h1>MyPortfolio...!</h1>
+    <nav id="navbar-section" class="navbars">
+        <div class="logo-head">
+            <img src="logo2.jpeg" alt="">
+            <h2 >Hari</h2>
         </div>
-        <ul class="navbar-right">
-            <li><a href="#home">Home</a></li>
+        <div class="navbar-items">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certifications">Certificate</a></li>
+                    <li><a href="#contect">Contect Me</a></li>
+                </ul>
+        </div>
+        <div class="side-nav-bar">
+            <img src="moon.png" id="moon">
+            <i class="fa-solid fa-bars" id="side-xbar" onclick="shownavbar()"></i>
+        </div>
+        <!-- <div class="toogle-switch">
+            <button><a href="#contect">Get In Touch</a></button>
+            <button id="dark" onclick="click()">Dark Mode</button>
+        </div> -->
+    </nav>
+    <section class="side-navbar-section" id="side-open">
+        <p><i class="fa-solid fa-xmark" onclick="closenavbar()"></i></p>
+        <ul onclick="closenavbar()">
+            <li><a href="#Home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#certifications">Certificate</a></li>
+            <li><a href="#contect">Contect Me</a></li>
         </ul>
-        <div class="navbar-menu-toggle" onclick="shownavbar()">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-    </nav>
-    <div class="side-navbar" onclick="closenavbar()">
-        <p>
-            <i class="fa-solid fa-xmark"></i>
-        </p>
-        <div class="side-navbar-links">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+    </section>
 
+<header id="Home" class="home-section">
+    <div class="home-container">       
+        <div class="content-container">
+            <h1>Hello!</h1>
+            <p class="name">I'M Hariharapudhran</p>
+            <span class="frontend">Frontend Developer</span>
+            <div class="home-btn">
+                <button><a href="Certificates/hariharapudhran.cv1.pdf" target="_blank">Hire Me</a></button>
+                <button><a href="#about">Explore</a></button>
+            </div>
+        </div>
+        <div class="web-image">
+            <img src="trans3.jpeg" alt="Frontend Image" id="change">
+        </div>
     </div>
+</header>
 
-    <!-- /* home section */ -->
-    <section id="home" class="home-section">
-        <div class="home-content">
-            <h2 class="animated-text">Hi </h2>
-            <h2 class="animated-text">I am Hariharaputhran</h2>
-            <h2 id="frontend-web-designer" class="animated-text-right">Frontend Developer</h2>
-        </div>
-        <div class="profile-photo">
-            <img src="web4.png" alt="Profile Photo">
-        </div>
-    </section>
 
-    <!-- about section -->
-    <section id="about" class="about-section">
-        <h2>About Me</h2>
-        <div class="about-container">
-            <div class="about-content">
-                <p>
-                    I am Hariharaputhran, a passionate Frontend Web Designer with a keen eye for design and detail.
-                    With experience in creating dynamic and responsive websites, I strive to bring a unique perspective
-                    to every project I work on. My goal is to combine creativity and technical expertise to deliver
-                    visually appealing and user-friendly web experiences.
-                </p>
-                
+<section id="about" class="about_section">
+    <h1 class="about-heading">About Me</h1>
+    <div class="about_container">
+        <div class="profile-image">
+            <img src="profilebackremove.png" alt="Profile photo">
+        </div>
+        <div class="about_content">
+            <p><!-- As an enthusiastic and evolving Front-end developer. i am actively
+                seeking opportunities to contribute my skills and creatively to a
+                collabrative development team. iam particularly interested in
+                joining a team where i can leverage my current project experience
+                to craft intuilive and visually appending user interface, while
+                continuously expanding my skills set in the field of Front-end
+                development with a strong fountation in javascript.   -->
+
+                I am Hariharaputhran, a passionate Frontend Web Designer with a 
+                keen eye for design and detail. With experience in creating dynamic
+                and responsive websites, I strive to bring a unique perspective to 
+                every project I work on. My goal is to combine creativity and technical 
+                expertise to deliver visually appealing and user-friendly web experiences.   
+            </p>
+            <button><a href="/Certificates/hariharapudhran.cv1.pdf" target="_blank">Download CV</a></button>
+        </div>
+    </div>
+</section>
+<section id="skills" class="skills-section">
+    <h1 class="skill-head">Skills</h1>
+    <div class="skills-type">
+        <div class="language-skills">
+            <h2>Languages</h2>
+            <div class="html">
+                <h4>HTML</h4>
+                <h3>90%</h3>
             </div>
-            <div class="about-photo">
-                <img src="profile1.jpg" alt="Profile Photo">
-                <button class="cvbtn"><a href="hariharapudhran.cv.pdf">Download CV</a></button>
+            <div class="bar-html">
+                <div class="percentage"></div>
+            </div>
+            <div class="css">
+                <h4>CSS</h4>
+                <h3>70%</h3>
+            </div>
+            <div class="bar-css">
+                <div class="percentage"></div>
+            </div>
+            <div class="javascript">
+                <h4>JAVASCRIPT</h4>
+                <h3>70%</h3>
+            </div>
+            <div class="bar-js">
+                <div class="percentage"></div>
+            </div>
+            <div class="react">
+                <h4>React</h4>
+                <h3>50%</h3>
+            </div>
+            <div class="bar-react">
+                <div class="percentage"></div>
             </div>
         </div>
-    </section>
-  
-    <!-- skills section -->
-<section class="skill-body" id="skills">
-    <div class="skill-container">
-        <h1 class="skill-heading">My Skills</h1>
-        <div class="skill-box">
-            <p><span>Html</span><span>97%</span></p>
-            <div class="progress-box">
-                <div class="progress html"></div>
+        <div class="soft-skills">
+            <h2>Soft Skills</h2>
+            <div class="leadership">
+                <h4>LEADERSHIP</h4>
+                <h3>100%</h3>
+            </div>
+            <div class="bar-lead">
+                <div class="percentage"></div>
+            </div>
+            <div class="time">
+                <h4>TIME MANAGEMENT</h4>
+                <h3>100%</h3>
+            </div>
+            <div class="bar-time">
+                <div class="percentage"></div>
+            </div>
+            <div class="problem">
+                <h4>PROBLEM SOLVING</h4>
+                <h3>80%</h3>
+            </div>
+            <div class="bar-problem">
+                <div class="percentage"></div>
             </div>
         </div>
-        <div class="skill-box">
-            <p><span>css</span><span>70%</span></p>
-            <div class="progress-box">
-                <div class="progress Css"></div>
+        <div class="tools">
+            <h2>Version Controll Tools</h2>
+            <div class="git">
+                <h4>GIT</h4>
+                <h3>90%</h3>
             </div>
-        </div>
-        <div class="skill-box">
-            <p><span>Javascript</span><span>56%</span></p>
-            <div class="progress-box">
-                <div class="progress js"></div>
+            <div class="bar-git">
+                <div class="percentage"></div>
             </div>
-        </div>
-        <div class="skill-box">
-            <p><span>Python</span><span>85%</span></p>
-            <div class="progress-box">
-                <div class="progress python"></div>
+            <div class="github">
+                <h4>GITHUB</h4>
+                <h3>90%</h3>
+            </div>
+            <div class="bar-hub">
+                <div class="percentage"></div>
             </div>
         </div>
     </div>
 </section>
-
-
-<!-- project section -->
 <section id="projects" class="projects-section">
     <h2>My Projects</h2>
     <div class="projects-container">
@@ -162,46 +223,151 @@
         </div>
     </div>
 </section>
-
-
-<!-- about me -->
-<section id="contact" class="contact-section">
-    <h2>Contect Me</h2>
-    <p>Connect with me on social media:</p>
-    <form class="contact-form">
-        <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Your Name">
+<section id="certifications" class="certificate-section">
+    <h2>My Certificates</h2>
+    <div class="certificate-container">
+        <div class="certificate certificate1">
+            <div class="certificate-info">
+                <h3>Programming Fundamentals using Python</h3>
+                <p>Certificate from - Infosys</p>
+                <button><a href="/Certificates/funtamental using python.pdf" target="_blank">View certificate</a></button>
+            </div>
         </div>
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Your Email">
+        <div class="certificate certificate2">
+            <div class="certificate-info">
+                <h3 style="margin-top: 30px;">Git & Github</h3>
+                <p>Certificate from - Geekstar</p>
+                <button><a href="/Certificates/geekstargitandgithub.pdf" target="_blank">View certificate</a></button>
+            </div>
         </div>
-        <div class="form-group">
-            <label for="description">Description:</label>
-            <textarea id="description" name="description" rows="4" placeholder="Your Message"></textarea>
+        <div class="certificate certificate3">
+            <div class="certificate-info">
+                <h3>JavaScript Fundamentals</h3>
+                <p>Certificate from - Geekstar</p>
+                <button><a href="/Certificates/geekstarjavascript.pdf" target="_blank">View certificate</a></button>
+            </div>
         </div>
-        <button type="submit">Submit</button>
-    </form>
-    <div class="social-icons">
-        <a href="https://www.instagram.com/yourusername" target="_blank">
-            <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://www.facebook.com/yourusername" target="_blank">
-            <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/yourusername" target="_blank">
-            <i class="fab fa-linkedin-in"></i>
-        </a>
-        <a href="https://www.twitter.com/yourusername" target="_blank">
-            <i class="fab fa-twitter"></i>
-        </a>
+        <div class="certificate certificate4">
+            <div class="certificate-info">
+                <h3 style="margin-top: 30px;">Fullstack with python</h3>
+                <p>Certificate from - Guvi</p>
+                <button><a href="/Certificates/GuviCertification - 44v6139q16573WUBk6 (1).pdf" target="_blank">View certificate</a></button>
+            </div>
+        </div>
+        <div class="certificate certificate5">
+            <div class="certificate-info">
+                <h3 style="margin-top: 30px;">JavaScript basics</h3>
+                <p>Certificate from - CarrerNinja</p>
+                <button><a href="/Certificates/Certificate.jpeg" target="_blank">View certificate</a></button>
+            </div>
+        </div>
     </div>
 </section>
-<footer>
-    &copy;2024 all rights reserved
+<section id="contect" class="contact-section">
+    <h1>Contect Me</h1>
+    <div class="contact-container">
+        <div class="contact-me">
+            <div class="contact-head">
+            <i class="fa-solid fa-address-book"></i>
+            <h2>Contect Me</h2>
+            </div>
+            <div class="gmail">
+                <i class="fa-solid fa-envelope"></i>
+                <h3>Gmail</h3>
+                <p>kuttycop562003@gmail.com</p>
+
+                <i class="fa-solid fa-phone"></i>
+                <h3>Phone</h3>
+                <p>6385751023</p>
+
+                <i class="fa-solid fa-location-dot"></i>
+                <h3>Location</h3>
+                <p>Hosur,Tamilnadu</p>
+            </div>
+            <div class="social-icon">
+                <a href="www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                <a href="www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/hariharapudhran-s-595146220/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/kuttycop"><i class="fa-brands fa-github"></i></a> 
+            </div>
+        </div>
+        <div class="getintouch">
+            <div class="getintouch-head">
+                <h2>Get In Touch</h2>
+            </div>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required="required" placeholder="Enter your name">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" required="required" placeholder="Enter your email">
+                <label for="Phone">Phone:</label>
+                <input type="number" name="Phone" id="Phone" required="required" placeholder="Enter your Phone number">
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" required="required" placeholder="Write something"></textarea>
+                <div class="contact-btn">
+                <button>Send</button>
+                <button>clear</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<section class="footer-contect-bottom">
+    <h3>Contect Me</h3>
+    <div class="footer-contect">
+        <div class="footer-contect-gmail">
+            <i class="fa-solid fa-envelope-circle-check"></i>
+             <h5>Gmail</h5>
+             <p>kuttycop562003@gmail.com|</p>
+        </div>
+        <div class="footer-contect-phone">
+            <i class="fa-solid fa-square-phone"></i>
+            <h5>Phone</h5>
+            <p>6385751023|</p>
+        </div>
+        <div class="footer-contect-addres">
+            <i class="fa-solid fa-map"></i>
+            <h5>Address</h5>
+            <p>Hosur,Tamilnadu</p>
+        </div>
+    </div>
+    <div class="social-icons">
+        <a href="www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+        <a href="www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/hariharapudhran-s-595146220/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/kuttycop"><i class="fa-brands fa-github"></i></a> 
+    </div> 
+</section>
+<footer id="footer" class="footer-section">
+    &copy;2024 kuttycop,inc. All rights reserved.
 </footer>
 
-      <script src="script.js"></script>
+<script>
+    var icon=document.getElementById("moon");
+    var img=document.getElementById("change")
+    icon.onclick=function(){
+        document.body.classList.toggle("dark-mode")
+        if(document.body.classList.contains("dark-mode")){
+            icon.src="sun.png";
+            img.src="trans4.jpeg"
+        }
+        else{
+            icon.src="moon.png";
+            img.src="trans3.jpeg"
+        }
+    }
+
+var sidenav=document.getElementById("side-open")
+
+function shownavbar()
+{
+    sidenav.style.left="0"
+}
+function closenavbar()
+{
+    sidenav.style.left="-60%"
+}
+</script>
+
 </body>
 </html>
