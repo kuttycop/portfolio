@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="favicon1.webp">
+</head>
+<body>
+    <nav id="navbar-section" class="navbars">
+        <div class="logo-head">
+            <img src="logo2.jpeg" alt="">
+            <h2 >Hari</h2>
+        </div>
+        <div class="navbar-items">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certifications">Certificate</a></li>
+                    <li><a href="#contect">Contect Me</a></li>
+                </ul>
+        </div>
+        <div class="side-nav-bar">
+            <img src="moon.png" id="moon">
+            <i class="fa-solid fa-bars" id="side-xbar" onclick="shownavbar()"></i>
+        </div>
+        <!-- <div class="toogle-switch">
+            <button><a href="#contect">Get In Touch</a></button>
+            <button id="dark" onclick="click()">Dark Mode</button>
+        </div> -->
+    </nav>
+    <section class="side-navbar-section" id="side-open">
+        <p><i class="fa-solid fa-xmark" onclick="closenavbar()"></i></p>
+        <ul onclick="closenavbar()">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certificate</a></li>
+            <li><a href="#contect">Contect Me</a></li>
+        </ul>
+    </section>
+
+<header id="Home" class="home-section">
+    <div class="home-container">       
+        <div class="content-container">
+            <h1>Hello!</h1>
+            <p class="name">I'M Hariharapudhran</p>
+            <span class="frontend">Frontend Developer</span>
+            <div class="home-btn">
+                <button><a href="Certificates/hariharapudhran.cv1.pdf" target="_blank">Hire Me</a></button>
+                <button><a href="#about">Explore</a></button>
+            </div>
+        </div>
+        <div class="web-image">
+            <img src="trans3.jpeg" alt="Frontend Image" id="change">
+        </div>
+    </div>
+</header>
+
+
+<section id="about" class="about_section">
+    <h1 class="about-heading">About Me</h1>
+    <div class="about_container">
+        <div class="profile-image">
+            <img src="profilebackremove.png" alt="Profile photo">
+        </div>
+        <div class="about_content">
+            <p><!-- As an enthusiastic and evolving Front-end developer. i am actively
+                seeking opportunities to contribute my skills and creatively to a
+                collabrative development team. iam particularly interested in
+                joining a team where i can leverage my current project experience
+                to craft intuilive and visually appending user interface, while
+                continuously expanding my skills set in the field of Front-end
+                development with a strong fountation in javascript.   -->
+
+                I am Hariharaputhran, a passionate Frontend Web Designer with a 
+                keen eye for design and detail. With experience in creating dynamic
+                and responsive websites, I strive to bring a unique perspective to 
+                every project I work on. My goal is to combine creativity and technical 
+                expertise to deliver visually appealing and user-friendly web experiences.   
+            </p>
+            <button><a href="/Certificates/hariharapudhran.cv1.pdf" target="_blank">Download CV</a></button>
+        </div>
+    </div>
+</section>
+<section id="skills" class="skills-section">
+    <h1 class="skill-head">Skills</h1>
+    <div class="skills-type">
+        <div class="language-skills">
+            <h2>Languages</h2>
+            <div class="html">
+                <h4>HTML</h4>
+                <h3>90%</h3>
+            </div>
+            <div class="bar-html">
+                <div class="percentage"></div>
+            </div>
+            <div class="css">
+                <h4>CSS</h4>
+                <h3>70%</h3>
+            </div>
+            <div class="bar-css">
+                <div class="percentage"></div>
+            </div>
+            <div class="javascript">
+                <h4>JAVASCRIPT</h4>
+                <h3>70%</h3>
+            </div>
+            <div class="bar-js">
+                <div class="percentage"></div>
+            </div>
+            <div class="react">
+                <h4>React</h4>
+                <h3>50%</h3>
+            </div>
+            <div class="bar-react">
+                <div class="percentage"></div>
+            </div>
+        </div>
+        <div class="soft-skills">
+            <h2>Soft Skills</h2>
+            <div class="leadership">
+                <h4>LEADERSHIP</h4>
+                <h3>100%</h3>
+            </div>
+            <div class="bar-lead">
+                <div class="percentage"></div>
+            </div>
+            <div class="time">
+                <h4>TIME MANAGEMENT</h4>
+                <h3>100%</h3>
+            </div>
+            <div class="bar-time">
+                <div class="percentage"></div>
+            </div>
+            <div class="problem">
+                <h4>PROBLEM SOLVING</h4>
+                <h3>80%</h3>
+            </div>
+            <div class="bar-problem">
+                <div class="percentage"></div>
+            </div>
+        </div>
+        <div class="tools">
+            <h2>Version Controll Tools</h2>
+            <div class="git">
+                <h4>GIT</h4>
+                <h3>90%</h3>
+            </div>
+            <div class="bar-git">
+                <div class="percentage"></div>
+            </div>
+            <div class="github">
+                <h4>GITHUB</h4>
+                <h3>90%</h3>
+            </div>
+            <div class="bar-hub">
+                <div class="percentage"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="projects" class="projects-section">
+    <h2>My Projects</h2>
+    <div class="projects-container">
+        <div class="project project1">
+            <div class="project-info">
+                <h3>BOOKSKY</h3>
+                <p>Developed a notes app for organizing and managing personal notes using HTML, CSS, and JavaScript.
+                    Designed a responsive and user-friendly interface with dynamic note-taking features.
+                    Implemented interactive functionalities for creating, editing, and deleting notes.
+                    Enhanced user productivity and organization through an intuitive and efficient design.
+                </p>
+            </div>
+        </div>
+        <div class="project project2">
+            <div class="project-info">
+                <h3>Calculator App</h3>
+                <p>Developed a calculator application using Python to perform basic arithmetic operations.
+                    Designed a user-friendly interface with Tkinter for an intuitive user experience.
+                    Implemented functionalities for addition, subtraction, multiplication, and division.
+                    Ensured accurate and efficient calculations, enhancing user productivity.
+                </p>
+            </div>
+        </div>
+        <div class="project project3">
+            <div class="project-info">
+                <h3>Guess the Number Game</h3>
+                <p>Developed an interactive web-based game where users guess a randomly generated number using HTML, CSS, and JavaScript.
+                    Designed a user-friendly interface with dynamic updates and feedback for each guess.
+                    Implemented core game logic in JavaScript, including input validation and hint messages.
+                    Enhanced user engagement with responsive design and interactive elements.</p>
+            </div>
+        </div>
+        <div class="project project4">
+            <div class="project-info">
+                <h3>Perfume Project</h3>
+                <p>Created an engaging web application to showcase and explore various perfumes using HTML, CSS, and JavaScript.
+                    Designed a visually appealing and responsive layout to enhance user experience.
+                    Implemented interactive features such as product filtering, detailed views, and user reviews.
+                    Improved user engagement and accessibility through intuitive design and functionality.</p>
+            </div>
+        </div>
+        <div class="project project5">
+            <div class="project-info">
+                <h3>Dodo List App</h3>
+                <p>Developed a to-do list application using HTML, CSS, and JavaScript for task management.
+                    Designed a clean and responsive interface for adding, editing, and deleting tasks.
+                    Implemented JavaScript functionalities to mark tasks as completed and store them in local storage.
+                    Enhanced user productivity through an intuitive and user-friendly design.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="certifications" class="certificate-section">
+    <h2>My Certificates</h2>
+    <div class="certificate-container">
+        <div class="certificate certificate1">
+            <div class="certificate-info">
+                <h3>Programming Fundamentals using Python</h3>
+                <p>Certificate from - Infosys</p>
+                <button><a href="/Certificates/funtamental using python.pdf" target="_blank">View certificate</a></button>
+            </div>
+        </div>
+        <div class="certificate certificate2">
+            <div class="certificate-info">
+                <h3 style="margin-top: 30px;">Git & Github</h3>
+                <p>Certificate from - Geekstar</p>
+                <button><a href="/Certificates/geekstargitandgithub.pdf" target="_blank">View certificate</a></button>
+            </div>
+        </div>
+        <div class="certificate certificate3">
+            <div class="certificate-info">
+                <h3>JavaScript Fundamentals</h3>
+                <p>Certificate from - Geekstar</p>
+                <button><a href="/Certificates/geekstarjavascript.pdf" target="_blank">View certificate</a></button>
+            </div>
+        </div>
+        <div class="certificate certificate4">
+            <div class="certificate-info">
+                <h3 style="margin-top: 30px;">Fullstack with python</h3>
+                <p>Certificate from - Guvi</p>
+                <button><a href="/Certificates/GuviCertification - 44v6139q16573WUBk6 (1).pdf" target="_blank">View certificate</a></button>
+            </div>
+        </div>
+        <div class="certificate certificate5">
+            <div class="certificate-info">
+                <h3 style="margin-top: 30px;">JavaScript basics</h3>
+                <p>Certificate from - CarrerNinja</p>
+                <button><a href="/Certificates/Certificate.jpeg" target="_blank">View certificate</a></button>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contect" class="contact-section">
+    <h1>Contect Me</h1>
+    <div class="contact-container">
+        <div class="contact-me">
+            <div class="contact-head">
+            <i class="fa-solid fa-address-book"></i>
+            <h2>Contect Me</h2>
+            </div>
+            <div class="gmail">
+                <i class="fa-solid fa-envelope"></i>
+                <h3>Gmail</h3>
+                <p>kuttycop562003@gmail.com</p>
+
+                <i class="fa-solid fa-phone"></i>
+                <h3>Phone</h3>
+                <p>6385751023</p>
+
+                <i class="fa-solid fa-location-dot"></i>
+                <h3>Location</h3>
+                <p>Hosur,Tamilnadu</p>
+            </div>
+            <div class="social-icon">
+                <a href="www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                <a href="www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/hariharapudhran-s-595146220/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/kuttycop"><i class="fa-brands fa-github"></i></a> 
+            </div>
+        </div>
+        <div class="getintouch">
+            <div class="getintouch-head">
+                <h2>Get In Touch</h2>
+            </div>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required="required" placeholder="Enter your name">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" required="required" placeholder="Enter your email">
+                <label for="Phone">Phone:</label>
+                <input type="number" name="Phone" id="Phone" required="required" placeholder="Enter your Phone number">
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" required="required" placeholder="Write something"></textarea>
+                <div class="contact-btn">
+                <button>Send</button>
+                <button>clear</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<section class="footer-contect-bottom">
+    <h3>Contect Me</h3>
+    <div class="footer-contect">
+        <div class="footer-contect-gmail">
+            <i class="fa-solid fa-envelope-circle-check"></i>
+             <h5>Gmail</h5>
+             <p>kuttycop562003@gmail.com|</p>
+        </div>
+        <div class="footer-contect-phone">
+            <i class="fa-solid fa-square-phone"></i>
+            <h5>Phone</h5>
+            <p>6385751023|</p>
+        </div>
+        <div class="footer-contect-addres">
+            <i class="fa-solid fa-map"></i>
+            <h5>Address</h5>
+            <p>Hosur,Tamilnadu</p>
+        </div>
+    </div>
+    <div class="social-icons">
+        <a href="www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+        <a href="www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/hariharapudhran-s-595146220/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/kuttycop"><i class="fa-brands fa-github"></i></a> 
+    </div> 
+</section>
+<footer id="footer" class="footer-section">
+    &copy;2024 kuttycop,inc. All rights reserved.
+</footer>
+
+<script>
+    var icon=document.getElementById("moon");
+    var img=document.getElementById("change")
+    icon.onclick=function(){
+        document.body.classList.toggle("dark-mode")
+        if(document.body.classList.contains("dark-mode")){
+            icon.src="sun.png";
+            img.src="trans4.jpeg"
+        }
+        else{
+            icon.src="moon.png";
+            img.src="trans3.jpeg"
+        }
+    }
+
+var sidenav=document.getElementById("side-open")
+
+function shownavbar()
+{
+    sidenav.style.left="0"
+}
+function closenavbar()
+{
+    sidenav.style.left="-60%"
+}
+</script>
+
+</body>
+</html>
