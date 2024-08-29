@@ -693,6 +693,10 @@ body{
     {
         display: none;
     }
+    .getintouch{
+        max-width: 440px;
+        margin-right: 5px;
+    }
 }
 .contact-me{
     display: flex;
@@ -751,12 +755,6 @@ body{
     box-shadow: 0px 0px 10px var(--secondry-color);
     text-align: start;
     padding: 10px;
-}
-@media screen and (max-width:567px) {
-    .getintouch{
-        width: 500px;
-        margin-right: 5px;
-    }
 }
 .getintouch-head{
     display: flex;
